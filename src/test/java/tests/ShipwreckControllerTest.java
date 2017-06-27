@@ -1,8 +1,7 @@
-package tests;
+/*package tests;
 
 
-import static org.junit.Assert.*;
-import junit.framework.Assert;
+import org.junit.Assert;
 
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -46,3 +45,4 @@ public class ShipwreckControllerTest {
 	}
 
 }
+*/

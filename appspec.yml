@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-     destination: /var/www/html
+   - source: ./shipwreck-app-1.0-SNAPSHOT.jar
+    destination: /tmp
 permissions:
    - object: /var/www/html
      pattern: "**"
