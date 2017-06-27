@@ -13,5 +13,5 @@ artifacts:
   files:
     - target/shipwreck-app-1.0-SNAPSHOT.war
     - appspec.yml
-- codedeploy/*
+    - codedeploy/*
 discard-paths: yes
