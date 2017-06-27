@@ -2,4 +2,12 @@ version: 0.0
 os: linux
 files:
    - source: ./shipwreck-app-1.0-SNAPSHOT.jar
-destination: /tmp
+destination: /var/www/html
+permissions:
+   - object: /var/www/html
+     pattern: "**"
+     owner: apache
+     group: apache
+     mode: 755
+     type:
+       - file
