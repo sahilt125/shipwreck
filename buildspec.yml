@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.1
 
 phases:
   build:
@@ -11,6 +11,7 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/shipwreck-app-1.0-SNAPSHOT.jar
+    - target/shipwreck-app-1.0-SNAPSHOT.war
     - appspec.yml
-  discard-paths: yes
+- codedeploy/*
+discard-paths: yes

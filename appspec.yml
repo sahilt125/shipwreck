@@ -1,13 +1,10 @@
 version: 0.0
 os: linux
 files:
-   - source: ./shipwreck-app-1.0-SNAPSHOT.jar
-destination: /var/www/html
-permissions:
-   - object: /var/www/html
-     pattern: "**"
-     owner: apache
-     group: apache
-     mode: 755
-     type:
-       - file
+  - source: /target/shipwreck-app-1.0-SNAPSHOT.war
+    destination: /usr/share/tomcat7/webapps/
+hooks:
+  AfterInstall:
+    - location: codedeploy/restartTomcat.sh
+      timeout: 300
+      runas: root
