@@ -2,4 +2,4 @@ version: 0.0
 os: linux
 files:
    - source: ./shipwreck-app-1.0-SNAPSHOT.jar
-    destination: /tmp
+	 destination: /tmp
