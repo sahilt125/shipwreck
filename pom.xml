@@ -59,7 +59,8 @@
             <scope>test</scope>
         </dependency>        
     </dependencies>
-       
+  
+        <pluginManagement>
          <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -74,5 +75,6 @@
                 <configuration>
                     <destFile>${sonar.jacoco.reportPath}</destFile>
                 </configuration>
-      </plugin> 
+         </plugin> 
+       </pluginManagement>
 </project>
